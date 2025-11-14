@@ -35,6 +35,14 @@ npm install
 yarn install
 ```
 
+### Build
+```bash
+# Build
+npm run build
+# or
+yarn build
+```
+
 ### Run Development Server
 
 ```bash
