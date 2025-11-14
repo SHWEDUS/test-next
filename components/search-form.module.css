@@ -1,0 +1,88 @@
+.formContainer {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  display: flex;
+  gap: 12px;
+  animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.inputWrapper {
+  flex: 1;
+}
+
+.input {
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.button {
+  padding: 14px 32px;
+  background: white;
+  color: #667eea;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+.button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  background: #f0f0f0;
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .formContainer {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

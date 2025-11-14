@@ -1,0 +1,32 @@
+.container {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.message {
+  margin: 0;
+  color: #d32f2f;
+  font-size: 16px;
+  font-weight: 500;
+}
